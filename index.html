@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/sidemenu.js"></script>
+    <title>부산광역시 산업단지 관리시스템</title>
+    <meta name="description" content="부산광역시 산업단지 관리시스템 메인입니다.">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/main_layout.css">
+    <link rel="stylesheet" href="css/main_reset.css">
+</head>
+    <script>
+        //로그인아이콘 리스트 열기
+        $(document).on("click", ".btn-open", function(e) {
+            var target = $(this).attr("href");
+            $(target).addClass("show");
+        });
+
+        // 외부영역 클릭 시 리스트닫기
+        $(document).mouseup(function(e) {
+            var LayerPopup = $(".info");
+            if (LayerPopup.has(e.target).length === 0) {
+                LayerPopup.removeClass("show");
+            }
+        });
+
+    </script>
+    
+ 
+<body>
+    <div class="wrapper">
+        <div class="visual_box">
+            <div class="txt">
+                <ul>
+                    <li>부산광역시 산업단지 관리시스템<br><span>INDUSTRIAL ZONE <br>MANAGEMENT<br>SYSTEM</span></li>
+                </ul>
+            </div>
+            <div class="slidebox">
+                <div id="slider-div">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                </div>
+            </div>
+            <div class="brb"></div>
+            <div class="header">
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#-">알림마당</a>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dd><a href="#-">기업지원사업</a></dd>
+                                        <dd><a href="#-">분양정보</a></dd>
+                                        <dd><a href="#-">처분공고</a></dd>
+                                        <dd><a href="#-">자료실</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd><a href="#-">산업단지 개요</a></dd>
+                                        <dd><a href="#-">산업단지 산업동향</a></dd>
+                                        <dd><a href="#-">입주기업체 정보</a></dd>
+                                        <dd><a href="#-">입주가능업종</a></dd>
+                                        <dd><a href="#-">관리기관 정보 등</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd><a href="#-">설문조사</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#-">부산 산업단지 정보</a>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dd><a href="#-">기업지원사업</a></dd>
+                                        <dd><a href="#-">분양정보</a></dd>
+                                        <dd><a href="#-">처분공고</a></dd>
+                                        <dd><a href="#-">자료실</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd><a href="#-">산업단지 개요</a></dd>
+                                        <dd><a href="#-">산업단지 산업동향</a></dd>
+                                        <dd><a href="#-">입주기업체 정보</a></dd>
+                                        <dd><a href="#-">입주가능업종</a></dd>
+                                        <dd><a href="#-">관리기관 정보 등</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd><a href="#-">설문조사</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#-">기업경영실태 조사</a>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dd><a href="#-">기업지원사업</a></dd>
+                                        <dd><a href="#-">분양정보</a></dd>
+                                        <dd><a href="#-">처분공고</a></dd>
+                                        <dd><a href="#-">자료실</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd><a href="#-">산업단지 개요</a></dd>
+                                        <dd><a href="#-">산업단지 산업동향</a></dd>
+                                        <dd><a href="#-">입주기업체 정보</a></dd>
+                                        <dd><a href="#-">입주가능업종</a></dd>
+                                        <dd><a href="#-">관리기관 정보 등</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dd><a href="#-">설문조사</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerbx">
+                    <h1 class="logo"><a href="#-"><img src="images/logo.png" alt="로고"><span class="hide">부산광역시 산업단지 관리시스템</span></a></h1>
+
+                    <div class="s_l_box">
+
+                        <ul>
+                            <li class="search"><a href="#-"></a></li>
+                            <!--로그인 했을때
+                            <li class="login"><a href="#info" class="btn-open"></a>
+                                <div>
+                                    <dl class="loglist info" id="info">
+                                        <dd><a href="">로그아웃</a></dd>
+                                        <dd><a href="">관리자</a></dd>
+                                        <dd><a href="">정보수정</a></dd>
+                                       
+                                    </dl>
+                                </div>
+                            </li>-->
+
+                            <!--로그인 안 했을때-->
+                            <li class="logout"><a href="#info" class="btn-open"></a>
+                                <div>
+                                    <dl class="loglist info" id="info">
+                                        <dd><a href="">로그인</a></dd>
+
+                                        <dd><a href="">회원가입</a></dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--change color bar pc-->
+            <script>
+                $(function() {
+                    var rollHeader = 100;
+                    $(window).scroll(function() {
+                        var scroll = getCurrentScroll();
+                        if (scroll >= rollHeader) {
+                            $('.header').addClass('roll');
+                        } else {
+                            $('.header').removeClass('roll');
+                        }
+                    });
+
+                    function getCurrentScroll() {
+                        return window.pageYOffset || document.documentElement.scrollTop;
+                    }
+                });
+
+            </script>
+            <div class="m_header">
+                <div class="navi">
+                    <h1 class="m_logo"><a href="#-"><img src="images/m_logo.png" alt="로고"><span class="hide">부산광역시 산업단지 관리시스템</span></a></h1>
+                    <!--로그인 했을때-->
+                    <div class="login"><a href="#info1" class="btn-open"><span></span></a>
+                        <dl class="loglist info" id="info1">
+
+                            <dd><a href="">로그아웃</a></dd>
+                            <dd><a href="">관리자</a></dd>
+                            <dd><a href="">정보수정</a></dd>
+                        </dl>
+                    </div>
+                    <!--로그인 안 했을때
+                     <div class="logout"><a href="#info1" class="btn-open"><span></span></a>
+                        <dl class="loglist info" id="info1">
+
+                            <dd><a href="">로그인</a></dd>
+                           
+                            <dd><a href="">회원가입</a></dd>
+                        </dl>
+                    </div>-->
+                    <div class="ham_menu hamburger " id="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <!-- hamburger script-->
+                    <script>
+                        $(document).ready(function() {
+                            $(".hamburger").click(function() {
+                                $(this).toggleClass("is-active");
+                            });
+                        });
+
+                    </script>
+                    <nav>
+                        <ul>
+                            <li class="tit">알림마당</li>
+                            <li><a href="#-">기업지원사업</a></li>
+                            <li><a href="#-">분양정보</a></li>
+                            <li><a href="#-">처분공고</a></li>
+                            <li><a href="#-">자료실</a></li>
+                            <li class="tit">부산 산업단지 정보</li>
+                            <li><a href="#-">산업단지 개요</a></li>
+                            <li><a href="#-">산업단지 산업동향</a></li>
+                            <li><a href="#-">입주기업체 정보</a></li>
+                            <li><a href="#-">입주가능업종</a></li>
+                            <li><a href="#-">관리기관 정보 등</a></li>
+                            <li class="tit">기업경영실태 조사</li>
+                            <li><a href="#-">설문조사</a></li>
+                        </ul>
+                    </nav>
+                    <!-- sidemenu script-->
+                    <script>
+                        $(document).ready(function() {
+                            $('.ham_menu').click(function() {
+                                $('nav').toggleClass('active')
+                            })
+                        })
+
+                    </script>
+                </div>
+            </div>
+            <!--change color bar mobile_tablet-->
+            <script>
+                $(function() {
+                    var rollHeader = 100;
+                    $(window).scroll(function() {
+                        var scroll = getCurrentScroll();
+                        if (scroll >= rollHeader) {
+                            $('.m_header').addClass('roll');
+                        } else {
+                            $('.m_header').removeClass('roll');
+                        }
+                    });
+
+                    function getCurrentScroll() {
+                        return window.pageYOffset || document.documentElement.scrollTop;
+                    }
+                });
+
+            </script>
+        </div>
+        <h2 class="tit_service">OUR SERVICE</h2>
+        <div class="service_box">
+            <div class="service_di">
+                <div class="service">
+                    <a href="#-">
+                        <ul>
+                            <li class="service_img1"><span class="hide">공단구역상세도 thumb 이미지</span></li>
+                            <li class="txt">공단구역 상세도<span>공단구역 상세도를<br>보실 수 있습니다.</span></li>
+                            <li class="arrow_icon"><span class="hide">화살표 아이콘</span></li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="service">
+                    <a href="#-">
+                        <ul>
+                            <li class="service_img2"><span class="hide">민원서식 thumb 이미지</span></li>
+                            <li class="txt">민원서식<span>민원시 필요한 서식을<br>다운받으세요!</span></li>
+                            <li class="arrow_icon1"><span class="hide">화살표 아이콘</span></li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="service_di">
+                <div class="service">
+                    <a href="#-">
+                        <ul>
+                            <li class="service_img3"><span class="hide">산업단지 입주안내 thumb 이미지</span></li>
+                            <li class="txt">산업단지 입주안내<span>산업단지에 입주하신걸 <br>환영합니다.</span></li>
+                            <li class="arrow_icon"><span class="hide">화살표 아이콘</span></li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="service last">
+                    <a href="#-">
+                        <ul>
+                            <li class="service_img4"><span class="hide">입주업체 현황 thumb 이미지</span></li>
+                            <li class="txt">입주업체 현황<span>입주업체를 한눈에<br>확인 하실 수 있습니다.</span></li>
+                            <li class="arrow_icon1"><span class="hide">화살표 아이콘</span></li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 class="tit_notice1"><span>NOTICE</span></h2>
+        <div class="notice_box">
+            <div class="inner">
+                <h2 class="tit_notice"><span>NOTICE</span></h2>
+                <div class="notice">
+                    <ul>
+                        <li class="tit">공지사항<a href="#-"><span class="more">자세히보기</span></a></li>
+                        <li class="firstline"><a href="#-">부산경제 진흥원 산업단지 총람 <br>부산경제 진흥원 산업단지<br><span>2021-03-21</span></a></li>
+                        <li class="list"><a href="#-"><span>부산경제 진흥원 산업단지 부산경제 진흥원 산업단지</span> <em>2021-03-21</em></a></li>
+                        <li class="list"><a href="#-"><span>부산경제 진흥원 산업단지 부산경제 진흥원 산업단지</span> <em>2021-03-21</em></a></li>
+                        <li class="list"><a href="#-"><span>부산경제 진흥원 산업단지 부산경제 진흥원 산업단지</span> <em>2021-03-21</em></a></li>
+                    </ul>
+                </div>
+                <div class="bidding">
+                    <ul>
+                        <li class="tit">입찰공고<a href="#-"><span class="more">자세히보기</span></a></li>
+                        <li class="firstline"><a href="#-">부산경제 진흥원 산업단지 총람 <br>부산경제 진흥원 산업단지<br><span>2021-03-21</span></a></li>
+                        <li class="list"><a href="#-"><span>부산경제 진흥원 산업단지 부산경제 진흥원 산업단지</span> <em>2021-03-21</em></a></li>
+                        <li class="list"><a href="#-"><span>부산경제 진흥원 산업단지 부산경제 진흥원 산업단지</span> <em>2021-03-21</em></a></li>
+                        <li class="list"><a href="#-"><span>부산경제 진흥원 산업단지 부산경제 진흥원 산업단지</span> <em>2021-03-21</em></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <ul>
+                <li><a href="#-"><img src="images/banner1.jpg"><span class="hide">banner</span></a></li>
+                <li><a href="#-"><img src="images/banner2.jpg"><span class="hide">banner</span></a></li>
+                <li><a href="#-"><img src="images/banner3.jpg"><span class="hide">banner</span></a></li>
+                <li class="last"><a href="#-"><img src="images/banner4.jpg"><span class="hide">banner</span></a></li>
+            </ul>
+        </div>
+        <div class="m_banner">
+            <ul>
+                <li><a href="#-"><img src="images/banner1_m.jpg"><span class="hide">banner</span></a></li>
+                <li><a href="#-"><img src="images/banner2_m.jpg"><span class="hide">banner</span></a></li>
+                <li><a href="#-"><img src="images/banner3_m.jpg"><span class="hide">banner</span></a></li>
+                <li class="last"><a href="#-"><img src="images/banner4_m.jpg"><span class="hide">banner</span></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                <div class="f_logo"><img src="images/f_logo.png" alt="logo"><span class="hide">부산광역시 산업단지 관리시스템</span></div>
+                <div class="m_f_logo"><img src="images/m_f_logo.png" alt="logo"><span class="hide">부산광역시 산업단지 관리시스템</span></div>
+                <div class="copyright">
+                    <ul>
+                        <li><a href="#-">이용약관</a></li>
+                        <li><a href="#-">개인정보처리방침</a></li>
+                        <li><a href="#-">이메일무단수집거부</a></li>
+                    </ul>
+
+                </div>
+                <div class="address">주소: 부산광역시 연제구 중앙대로 1090, <br>프라임시티 B/D 3,4층. <br>Tel : 051-000-0000. <br>Fax : 051-000-0000.</div>
+                <div class="copy">Copyright © 2021 부산광역시 산업단지<br> all rights reserved.</div>
+            </div>
+        </div>
+    </div>
+
+    <!--slick slider-->
+    <script>
+        $(function() {
+            $('#slider-div').slick({
+                slide: 'div', //슬라이드 되어야 할 태그 ex) div, li 
+                infinite: true, //무한 반복 옵션	 
+                slidesToShow: 1, // 한 화면에 보여질 컨텐츠 개수
+                slidesToScroll: 1, //스크롤 한번에 움직일 컨텐츠 개수
+                speed: 100, // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+                arrows: true, // 옆으로 이동하는 화살표 표시 여부
+                dots: true, // 스크롤바 아래 점으로 페이지네이션 여부
+                autoplay: true, // 자동 스크롤 사용 여부
+                autoplaySpeed: 10000, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                pauseOnHover: true, // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+                vertical: false, // 세로 방향 슬라이드 옵션
+                prevArrow: "<button type='button' class='slick-prev'>Previous</button>", // 이전 화살표 모양 설정
+                nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정
+                dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
+                draggable: true, //드래그 가능 여부 
+
+                responsive: [ // 반응형 웹 구현 옵션
+                    {
+                        breakpoint: 1240, //화면 사이즈 1240px
+                        settings: {
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767, //화면 사이즈 768px
+                        settings: {
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+
+            });
+        })
+
+    </script>
+</body>
+
+</html>
